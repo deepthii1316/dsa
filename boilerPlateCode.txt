@@ -12,5 +12,6 @@ public class className{
             int num = sc.nextInt();
             nums.add(num);
         }
+        
     }
 }
