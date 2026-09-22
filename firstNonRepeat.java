@@ -22,6 +22,7 @@ public class firstNonRepeat{
             int num = sc.nextInt();
             nums.add(num);
         }
+        sc.close();
 
         int ans = nonRepeat(nums);
         System.out.println(ans);
