@@ -2,7 +2,7 @@
 
 ## FREQUENCY / HASHING BASED
 
-- [ x ] Find element whose frequency equals its value
+- [x] Find element whose frequency equals its value
 - [ x ] Find all elements whose frequency equals value
 - [ x ] Find first repeating element
 - [ x ] Find first non-repeating element
