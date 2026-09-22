@@ -2,9 +2,13 @@ import java.io.*;
 import java.util.*;
 
 public class className{
+    static int function(ArrayList<Integer>nums){
+        return -1;
+    }
+
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        ArrayList<Integer>nums = new ArrayList<>();
+        var nums = new ArrayList<>();
 
         int n;
         n = sc.nextInt();
@@ -12,6 +16,8 @@ public class className{
             int num = sc.nextInt();
             nums.add(num);
         }
-        
+
+        int ans = function(nums);
+        System.out.println(ans);
     }
 }
