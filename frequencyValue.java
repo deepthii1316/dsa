@@ -12,6 +12,8 @@ public class frequencyValue{
             int val = sc.nextInt();
             hmap.put(val,hmap.getOrDefault(val,0)+1);
         }
+
         for(int i:hmap.keySet()) if(i == hmap.get(i)) System.out.print(i + " ");
+        sc.close();
         }
     }
