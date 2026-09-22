@@ -3,15 +3,15 @@
 ## FREQUENCY / HASHING BASED
 
 - [x] Find element whose frequency equals its value
-- [ x ] Find all elements whose frequency equals value
-- [ x ] Find first repeating element
-- [ x ] Find first non-repeating element
-- [ x ] Find second non-repeating element
-- [ x ] Find element with maximum frequency (if tie → smallest)
-- [ x ] Count frequency of each element
-- [ x ] Find elements appearing more than n/3 times
-- [ x ] Find least frequent element
-- [ x ] Check if two arrays are anagrams (same frequency)
+- [x] Find all elements whose frequency equals value
+- [x] Find first repeating element
+- [x] Find first non-repeating element
+- [x] Find second non-repeating element
+- [x] Find element with maximum frequency (if tie → smallest)
+- [x] Count frequency of each element
+- [x] Find elements appearing more than n/3 times
+- [x] Find least frequent element
+- [x] Check if two arrays are anagrams (same frequency)
 
 ## ARRAY BASIC LOGIC
 
