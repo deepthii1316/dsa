@@ -1,5 +1,5 @@
 //Find second non-repeating element
-
+package hashmap;
 import java.io.*;
 import java.util.*;
 

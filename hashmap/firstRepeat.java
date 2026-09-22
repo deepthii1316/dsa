@@ -1,4 +1,5 @@
 // find first repeating element
+package hashmap;
 import java.io.*;
 import java.util.*;
 

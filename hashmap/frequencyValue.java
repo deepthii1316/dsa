@@ -1,4 +1,5 @@
 //find element whose value is same as its frequency
+package hashmap;
 import java.io.*;
 import java.util.*;
 

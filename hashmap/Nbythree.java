@@ -1,20 +1,16 @@
-// Count frequency of each element
+// Find elements appearing more than n/3 times
+package hashmap;
 import java.io.*;
 import java.util.*;
 
-public class countFreq{
+public class Nbythree{
     static void calculate(ArrayList<Integer>nums){
         var hmap = new HashMap<Integer, Integer>();
-        
+        int n = nums.size();
         for(int i:nums) hmap.put(i,hmap.getOrDefault(i,0)+1);
-        for(var entry:hmap.entrySet()){
-            int k = entry.getKey();
-            int v = entry.getValue();
-
-            System.out.println("Key: " + k + ", " + "Value: " + v);
+        for(int i:hmap.keySet()){
+            if(hmap.get(i) > n/3) System.out.println(i + ", ");
         }
-        
-        
     }
 
     public static void main(String[] args){

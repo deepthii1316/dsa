@@ -1,16 +1,21 @@
-// Find least frequent element
+// Count frequency of each element
+package hashmap;
 import java.io.*;
 import java.util.*;
 
-public class LeastFreq{
-    static int calculate(ArrayList<Integer>nums){
+public class countFreq{
+    static void calculate(ArrayList<Integer>nums){
         var hmap = new HashMap<Integer, Integer>();
-        int ans = Integer.MAX_VALUE;
+        
         for(int i:nums) hmap.put(i,hmap.getOrDefault(i,0)+1);
-        for(int i:hmap.keySet()){
-            if(hmap.get(i) < ans) ans = hmap.get(i);
+        for(var entry:hmap.entrySet()){
+            int k = entry.getKey();
+            int v = entry.getValue();
+
+            System.out.println("Key: " + k + ", " + "Value: " + v);
         }
-        return ans;
+        
+        
     }
 
     public static void main(String[] args){
@@ -26,7 +31,7 @@ public class LeastFreq{
 
         sc.close();
 
-        int ans = calculate(nums);
-        System.out.println(ans);
+        calculate(nums);
+        
     }
 }

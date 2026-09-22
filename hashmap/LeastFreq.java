@@ -1,19 +1,16 @@
-// * Find element with maximum frequency (if tie → smallest)
+// Find least frequent element
+package hashmap;
 import java.io.*;
 import java.util.*;
 
-public class maxFreq{
+public class LeastFreq{
     static int calculate(ArrayList<Integer>nums){
-        var hmap = new TreeMap<Integer, Integer>();
-        int maxv = Integer.MIN_VALUE, ans = -1;
+        var hmap = new HashMap<Integer, Integer>();
+        int ans = Integer.MAX_VALUE;
         for(int i:nums) hmap.put(i,hmap.getOrDefault(i,0)+1);
-        for(var entry:hmap.entrySet()){
-            int k = entry.getKey();
-            int v = entry.getValue();
-
-            if(maxv < v) {maxv = v; ans = k;}
+        for(int i:hmap.keySet()){
+            if(hmap.get(i) < ans) ans = hmap.get(i);
         }
-        
         return ans;
     }
 

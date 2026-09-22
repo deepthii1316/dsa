@@ -1,19 +1,19 @@
 // Check if two arrays are anagrams (same frequency)
+package hashmap;
 import java.io.*;
 import java.util.*;
 
 public class AnagramCheck{
     static boolean calculate(ArrayList<Integer>nums1,ArrayList<Integer>nums2 ){
         if(nums1.size() != nums2.size()) return false;
-        var hmap1 = new TreeMap<Integer, Integer>();
-        var hmap2 = new TreeMap<Integer, Integer>();
+        var hmap = new HashMap<Integer, Integer>();
 
-        for(int i:nums1) hmap1.put(i,hmap1.getOrDefault(i,0)+1);
-        for(int i:nums2) hmap2.put(i,hmap2.getOrDefault(i,0)+1);
+        for(int i:nums1) hmap.put(i,hmap.getOrDefault(i,0)+1);
 
-        for(int i:hmap1.keySet()){
-            if(hmap1.get(i)==hmap2.get(i)) continue;
-            else return false;
+        for(int i:nums2){
+            int c = hmap.getOrDefault(i,0);
+            if(c==0) return false;
+            hmap.put(i, c-1);
         }
         return true;
     }
