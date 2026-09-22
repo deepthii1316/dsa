@@ -17,6 +17,8 @@ public class className{
             nums.add(num);
         }
 
+        sc.close();
+
         int ans = function(nums);
         System.out.println(ans);
     }
